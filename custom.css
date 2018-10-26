@@ -3,6 +3,21 @@
 	text-indent: 3px;
 	padding: 10px;
 }
+
+.containers {
+	text-align: center;
+	padding-bottom: -15px;
+	
+}
+.pictograph {
+padding-top: 15px;
+text-align: center;
+
+}
+.jumbotron {
+	box-sizing: 400px;
+	padding-top: 20px;
+}
 h5 {
 	text-align: center;
 }
