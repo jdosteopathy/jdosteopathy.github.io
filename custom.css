@@ -3,11 +3,22 @@
 	text-indent: 3px;
 	padding: 10px;
 }
-
+.maintitle {
+	text-align: center;
+}
 .containers {
 	text-align: center;
 	padding-bottom: -15px;
-	
+
+}
+p {
+	margin-top: 0px;
+	margin-bottom: 1rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+.paragraph {
+	margin-top: 2rem;
 }
 .pictograph {
 padding-top: 15px;
@@ -20,6 +31,9 @@ text-align: center;
 }
 h5 {
 	text-align: center;
+}
+.container {
+	padding: 1rem;
 }
 .container-1 {
 max-width: 1540px;
