@@ -46,7 +46,21 @@ h5 {
 	text-align: center;
 }
 
-.w3-row-padding w3-padding-64 w3-container {
+@media screen {
+
+}
+@media screen and (max-width: 200px) {
+  div.w3-bar-item {
+    display: none;
+}
+}
+@media screen and (max-width: 200px) {
+	div.w3-top {
+		display: none;
+	}
+}
+
+.w3-container {
 
     max-width: 1080px;
 
