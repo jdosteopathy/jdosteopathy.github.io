@@ -59,7 +59,11 @@ h5 {
 		display: none;
 	}
 }
-
+@media screen and (min-width: 738px) {
+	div.w3-top {
+		display: none;
+	}
+}
 .w3-container {
 
     max-width: 1080px;
