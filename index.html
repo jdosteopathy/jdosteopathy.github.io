@@ -1,123 +1,118 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-        <link href="custom.css" rel="stylesheet" type="text/css">
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <title>Dmitro Jovnyruk Manual Therapy</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+<title>Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Custom styles for this template -->
-    <link href="https://getbootstrap.com/docs/4.1/examples/jumbotron/jumbotron.css" rel="stylesheet">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<body>
 
-  </head>
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card w3-left-align w3-large">
+    <a class="w3-row w3-button w3-hide-medium w3-hide-large w3-left w3-padding-large w3-large w3-dark-grey" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-blue-grey w3-ripple "><i class="fa fa-fw fa-home"></i>Home</a> 
+    <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-padding-large w3-hover-white w3-hover-opacity">About</a>
+    <a href="blog.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-padding-large w3-hover-white w3-hover-opacity">Blog</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-hover-opacity">Contact Me</a>
+    <a class= "w3-bar-item w3-btn w3-padding-large w3-hover-white w3- w3-right align w3-deep-orange w3-ripple w3-round-small w3-hide-small" href="https://app.acuityscheduling.com/schedule.php?owner=16710311" 
+    roles="button"><i class="fa fa-calendar"> <br></i>Schedule Appointment </a>
+      <link rel="stylesheet" href="https://embed.acuityscheduling.com/embed/button/16710311.css"class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"  />
+  </div>
 
-  <body>
+  <!-- Navbar on small screens -->
+  <div class="w3-top w3-hide-medium w3-hide-large">
+   <div class="w3-bar w3-deep-orange w3-card w3-right-align w3-large w3-center">
+    <a class= "w3-btn w3-padding-large w3-hover-white w3- w3-center align w3-deep-orange w3-ripple w3-round-small w3-hide-large w3-hide-medium" href="https://app.acuityscheduling.com/schedule.php?owner=16710311" roles="button"> <i class="fa fa-calendar"> <br></i>Schedule Appointment </a>
+    <a class="w3-row w3-button w3-hide-medium w3-hide-large w3-left w3-padding-large w3-large w3-dark-grey" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+   <div id="navDemo" class="w3-bar-block w3-light-grey w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-padding-large">About</a>
+    <a href="blog.html" class="w3-bar-item w3-button w3-padding-large">Blog</a>
+    <a href="forms.html" class="w3-bar-item w3-button w3-padding-large">Contact Me</a>
+   </div>
+   </div>
+  </div>
+</div>
 
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="index.html">Dmitro Jovnyruk</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<!-- Header -->
+<header class="w3-container w3-light-grey w3-center" style="padding:60px">
+  <h1 class="w3-margin w3-jumbo">MANUAL THERAPY</h1>
+  <p class="w3-xlarge">Fixing Your Body and Building You Up Stronger! &nbsp;&nbsp;&nbsp;<i class="fa fa-cogs w3-padding-4" style="font-size:70px;color:steelblue"></i> </p>
+  <a href="about.html" class="w3-button w3-blue w3-padding w3-large w3-round-small">About Me</a>
+ 
+</header>
 
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          <li class="nav-item">
-            <a class="nav-link" href="blog.html">Blog</a>
-          <li class="nav-item">
-            <a class="nav-link" href="Forms.html">Forms</a>
-          </li>
-      </li>
-  </li>
-          <!---<li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="forms.html">Forms</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li> -->
-        </ul>
-        <!-- <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form> -->
-      </div>
-      
-      <a class= "btn btn-success" 
-      href="https://app.acuityscheduling.com/schedule.php?owner=16710311" 
-      roles="button" >Schedule Appointment
-      </a>
-      <link rel="stylesheet" href="https://embed.acuityscheduling.com/embed/button/16710311.css" id="acuity-button-styles" />
-      <script src="https://embed.acuityscheduling.com/embed/button/16710311.js" async>
-          
-      </script>
-    </nav>
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-16 w3-container w3-center">
+  <div class="w3-content">
+    <div class="w3-twohalf ">
+      <h1>What is Manual Osteopathy?!</h1>
+      <h5 class="w3-padding-32 w3-left-align">Osteopathy is drugless, holistic philosophy of assessment and treatment that uses the principles set by Dr. A.T. Still.<br><br>
+      It ncourages the body’s natural ability to self-heal and self-regulate. It is hollistic in the sense that the body is a dynamic unit of function and not a collection of independent, self-sufficient parts and that change in one area will have an effect on every other part.<br><br>
+      By removing restrictions and imbalances in the body’s structure, we affect and restore the proper function. The focus is on finding the health as opposed to the disease, by balancing mechanical load, encouraging proper circulation and nerve communication to the tissues to facilitate the healing process..</h5>
 
-    <main role="main">
+      <h4 class="w3-padding-32 w3-center"><i>"Find it, fix it and leave it alone. Nature will do the rest"</i> 
+        <br>-Dr. Andrew Taylor Still (founder of Osteopathy)</br></h4>
+    </div>
 
-      <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron">
-            
+    <!--<div class="w3-quarter w3-center" 
+      <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
+    </div>
+    --->
+  </div>
+</div>
 
-        <div class="containers">
-          <h1 class="display-4">Dmitro Jovnyruk, M.OMSc Candidate</h1>
-          <p>Student at the Canadian Academy of Osteopathy</p>
-         <p><a class="btn btn-primary btn-lg" href="about.html" role="button"> About me &raquo;</a></p>
-        </div>
-      </div> \
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-32 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <i class="fa fa-heartbeat w3-padding-16" style="font-size:120px;color:red"></i>
+    </div>
 
-      <div class="container">
-        <h3>What is Manual Osteopathy?!</h3>
-        <h6> Osteopathy is drugless, holistic philosophy of assessment and treatment that uses the principles set by Dr. A.T. Still, encouraging the body’s natural ability to self-heal and self-regulate. It is hollistic in the sense that the body is a dynamic unit of function and not a collection of independent, self-sufficient parts and that change in one area will have an effect on every other part. By removing restrictions and imbalances in the body’s structure, we affect and restore the proper function. The focus is on finding the health as opposed to the disease, by balancing mechanical load, encouraging proper circulation and nerve communication to the tissues to facilitate the healing process. </h6>
-       
-        <p id class="pictograph"><img src='https://downtownwellness.ca/images/articles/What-Is-Osteopathy-Infographic.png' alt='What Is Osteopathy?' width='800px' border='10' horizontal-align= 'middle' /></a></p>
-        <!-- Example row of columns -->
-        <!-- <div class="row">
-          <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div>
-          <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div>
-          <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div> -->
-        </div>
+    <div class="w3-twothird w3-center">
+      <h1>This manual therapy is gentle and rhythmic. We aim to build you up, not tear you down. </h1>
 
-        <hr>
+    </div>
+  </div>
+</div>
 
-      </div> <!-- /container -->
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-8">
+    <h1 class="w3-margin w3-large">&copy; Dmitro's Homemade Dumplings, 2018 </h1>
+</div>
 
-    </main>
+<!-- Footer 
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+ <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+-->
 
-    <footer class="container">
-      <p>&copy; Dmitro's Homemade Dumplings, 2018</p>
-    </footer>
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-  </body>
-    <link href="custom.css" rel="stylesheet" type=text/css">
-
+</body>
 </html>
