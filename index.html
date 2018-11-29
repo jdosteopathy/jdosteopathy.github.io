@@ -43,11 +43,64 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   </div>
 </div>
 
+<!--Create a Parallax Effect-->
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('homepage.png');
+    min-height: 90%;
+    opacity: 0.9;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+        min-height: 400px;
+
+    }
+}
+</style>
 <!-- Header -->
-<header class="w3-container w3-padding-64 w3-light-grey w3-center">
-  <h1 class="w3-margin w3-jumbo w3-center">MANUAL THERAPY</h1>
-  <p class="w3-xlarge">Fixing Your Body and Building You Up Stronger! &nbsp;&nbsp;&nbsp;<i class="fa fa-cogs w3-padding-4" style="font-size:70px;color:steelblue"></i> </p>
-  <a href="about.html" class="w3-button w3-blue w3-padding w3-large w3-round-small">About Me</a>
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+
+  <div class="w3-display-center w3-padding-large w3-wide w3-text-white w3-center">
+    <h1 class="w3-margin w3-jumbo w3-display-middle" style="text-shadow:1px 1px 0 #000">MANUAL THERAPY</h1>
+    
+    <div class="w3-container w3-display-bottomleft w3-hide-large w3-padding-large">
+  <p style="text-shadow:1px 1px 0 #000;
+  max-width: 100%;
+  max-height: 400px;" class="w3-margin w3-xlarge w3-wide">Fixing Your Body &amp; Building You Up Stronger! </p>
+  </div>
+
+<div class="w3-container w3-display-bottommiddle w3-hide-small w3-hide-medium w3-padding-large">
+  <p style="text-shadow:1px 1px 0 #000;
+  max-width: 100%;
+  max-height: 400px;" class="w3-margin w3-xxlarge w3-wide">Fixing Your Body &amp; Building You Up Stronger! </p>
+  </div>
+</div>
+</div>
+
+<header class="w3-display-container w3-content w3-center w3-padding-large" style="max-width:1500px">
+  <a href="about.html" class="w3-button w3-blue w3-paddin w3-xlarge w3-margin-top w3-round-small">About Me</a>
 </header>
 <style>
 .w3-padding-64 {
