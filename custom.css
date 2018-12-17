@@ -59,8 +59,8 @@ h5 {
 		display: none;
 	}
 }
-@media screen and (min-width: 738px) {
-	div.w3-top {
+@media screen and (max-width: 738px) {
+	div.w3-button {
 		display: none;
 	}
 }
