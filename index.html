@@ -73,15 +73,17 @@ body, html {
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment: fixed;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
+
     background-image: url('hsstand.jpeg');
-    min-height: 90%;
+    min-height: 80%;
+    line-height: 500px;
     opacity: 0.95;
 }
 
@@ -100,16 +102,35 @@ body, html {
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
 
-  <div class="w3-display-center w3-padding-large w3-wide w3-text-white w3-center">
-    <h1 class="w3-container w3-jumbo w3-display-middle" style="text-shadow:1px 1px 0 #000; min-width: 100%; border-spacing: 30px; ">MANUAL THERAPY</h1>
+  <div class="w3-display-center w3-padding-large w3-wide w3-text-white w3-display-center w3-display-bottommiddle">
+    <h1 class="w3-container w3-jumbo w3-padding-32 w3-display-center" style="text-shadow:4px 1px 0 #000; 
+    min-width: 100%;
+    	line-height: 80px;
+    	text-align: center;  
+    	border-spacing: 10px;
+ ">
+     OSTEOPATHIC MANUAL THERAPY</h1>
     
   
 
+<!-- Subtext --
 <div class="w3-container w3-display-bottommiddle w3-hide-small w3-hide-medium w3-padding-large">
-  <p style="text-shadow:1px 1px 0 #000;
-  max-width: 100%;
-  max-height: 400px;" class="w3-margin w3-xxlarge w3-wide">Fixing Your Body &amp; Building You Up Stronger! </p>
+  <p style="
+  text-shadow:5px 2px 0 #000; 
+    	min-width: 170%;
+    	line-height: 40px;
+    	border-spacing: 100px;
+    	text-shadow:1px 1px 0 #000;
+  transform: translate(-20%, 200%);
+      	border-spacing: 20px;
+ 
+  max-width: 200%;
+  max-height: 400px;
+    "
+    
+  class="w3-xxlarge w3-wide w3-center w3-padding-16">Building You Up Stronger </p>
   </div>
+  <!-->
 </div>
 </div>
 
