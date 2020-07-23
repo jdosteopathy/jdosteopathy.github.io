@@ -51,19 +51,23 @@ body, html {
 
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
+      background-attachment: fixed;
+  background-position: middle;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
     background-image: url('hs_squat.jpeg');
-  min-height: 80%;
+ height: 100%;
   max-height: 90%;
     line-height: 500px;
     opacity: 3.95;
+    bottom: -70px;
+    transform: translateY(-7em)
+
+
 }
 .w3-wide {letter-spacing: 9px;}
 .w3-hover-opacity {cursor: pointer;}
@@ -80,7 +84,7 @@ body, html {
       line-height: 80px;
       text-align: center;  
       border-spacing: 10px;
-      transform: translateX(-120px);
+      transform: translateX(-180px);
 
  ">
      DMITRO JOVNYRUK</h1>
