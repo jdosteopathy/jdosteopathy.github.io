@@ -2,20 +2,21 @@
 <html>
 	<head>
 		
-        <title>Home | JD Osteopathy</title>
+        <title>About | JD Osteopathy</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="css/main.css" />
-        <link rel="shortcut icon" type="image/ico" href="images/favicon.ico"/>
-		<noscript><link rel="stylesheet" href="css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="../css/main.css" />
+        <link rel="shortcut icon" type="image/ico" href="../images/favicon.ico"/>
+		<noscript><link rel="stylesheet" href="../css/noscript.css" /></noscript>
       
         <style>
           
-          nav { 
+          nav {
             z-index: 100;
             right: 0;
             text-align: right;
-            margin-top: -30px;
+            height: 50px; 
+            background: black;
           }
           
           nav a {
@@ -25,32 +26,85 @@
             text-transform: lowercase;
           }
           
-          #links {
-            position: absolute;
-            right: 0;
-            top: 10px;
-            z-index: 100;
+          .links {
+            padding: 10px;
           }
+          
+          .home-link {
+            left: 0;
+            position: absolute;
+            padding: 0;
+            padding-left: 20px;
+          }
+          
+          .navsched>a {
+            color: antiquewhite; 
+            font-weight: bold;
+          }
+          
+          .main { padding: 2.5em 0 4em 0; }
+          .active { font-weight: bold; }
+          
       
         </style>
       
 	</head>
 	<body class="is-preload">
       <nav>
-          <div id="links">
-            <a href="about/">About</a>
-            <a href="faq/">FAQ</a>
-            <span id="navsched"><a href="https://linktr.ee/dmitro">book online</a></span>
+          <div class="links">
+            <a class="home-link" href="../">Home</a>
+            <a href="#" class="active">About</a>
+            <a href="../faq/">FAQ</a>
+            <span class="navsched"><a href="https://linktr.ee/dmitro">book online</a></span>
         </div>
       </nav>
       
-			<section id="header">
-				<div class="inner">
-					<span class="icon solid major fa-heartbeat"></span>
-					<h1>JD Osteopathy<br/> by <strong>Dmitro Jovnyruk</strong></h1>
-					<ul class="actions special">
-						<li><a href="https://linktr.ee/dmitro" class="button scrolly">Book Appointment</a></li>
-					</ul>
+			
+
+			<section id="one" class="main style1">
+				<div class="container">
+					<div class="row gtr-150">
+						<div class="col-6 col-12-medium">
+							<header class="major">
+								<h2>What kind of Manual Therapy<br> do I Provide?</h2>
+							</header>
+							<p>My manual therapy is drugless, holistic philosophy of assessment and treatment that uses the principles set by Dr. A.T. Still.</p>
+                            <p>The treatment's goal is to encourage the body’s natural ability to self-heal and self-regulate. It is hollistic in the sense that the body is a dynamic unit of function and not a collection of independent, self-sufficient parts and that change in one area will have an effect on every other part.</p>
+                            <p>By removing restrictions and imbalances in the body’s structure, we affect and restore the proper function. The focus is on finding the health as opposed to the disease, by balancing mechanical load, encouraging proper circulation and nerve communication to the tissues to facilitate the healing process.</p>
+                            <p>If you have any questions or want more information, contact me and I'd be happy to chat!</p>
+						</div>
+						<div class="col-6 col-12-medium imp-medium">
+							<span class="image fit"><img src="../images/01-splash.jpeg" alt="" /></span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="two" class="main style2 special">
+				<div class="container">
+						<div class="col-6 col-12-medium">
+							<header class="major">
+								<h2>This manual therapy is gentle and rhythmic.<br> We aim to build you up, not tear you down.</h2>
+							</header>
+						</div>
+					</div>
+			</section>
+
+		    <section id="three" class="main style1">
+				<div class="container">
+					<div class="row gtr-150">
+						<div class="col-6 col-12-medium">
+							<header class="major">
+                              <h2>I focus on finding the health,<br> not disease.</h2>
+							</header>
+							<p>Whether chronic or acute, I can help with muscle and joint pain and other muskuloskeletal dysfunctions by encouraging your body's natural self-healing & self-regulating mechanisms. Using my extensive knowledge of functional anatomy, physiology and practical clinical experience, I assess and address functional asymmetries to restore health where it is lost. Finding health means to ensure your body's natural ability to self-heal is uninterupted by restoring the natural equillibrium.</p>
+                          
+                          <p style="font-style: italic">"To find health should be the object of the doctor. Anyone can find disease" &ndash; Dr. Andrew Taylor Still</p>
+						</div>
+						<div class="col-6 col-12-medium imp-medium">
+							<span class="image fit"><img src="images/01-splash.jpeg" alt="" /></span>
+						</div>
+					</div>
 				</div>
 			</section>
 
