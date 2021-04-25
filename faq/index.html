@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -9,22 +10,28 @@
         <link rel="shortcut icon" type="image/ico" href="../images/favicon.ico"/>
         <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 		<noscript><link rel="stylesheet" href="../css/noscript.css" /></noscript>
       
         <style>
+          
+          p, li, ul {
+            text-align: left;
+          }
+          
+          ul { margin-left: 10px; }
           
           nav {
             z-index: 100;
             right: 0;
             text-align: right;
             height: 50px; 
-            background: black;
+            background: #393333;
           }
           
           nav a {
             padding: 20px;
-            color: white;
+            color: #E49A60;
             border-bottom: none;
             text-transform: lowercase;
           }
@@ -48,14 +55,25 @@
           .main { padding: 2.5em 0 4em 0; }
           .active { font-weight: bold; }
           
+      .content {
+          display: none;
+      }
+          
+          a.faqlink { 
+          text-decoration: none;
+          font-weight: 600;
+          }
       
         </style>
-      
-       <script>
-  $( function() {
-    $( "#accordion" ).accordion();
-  } );
-  </script>
+
+      <script type="text/javascript">
+$(document).ready(function(){
+    $('.faqlink').click(function(){
+        $('.content').hide();
+        $(this).next('.content').show();
+    });
+});
+</script>
       
 	</head>
 	<body class="is-preload">
@@ -68,77 +86,73 @@
         </div>
       </nav>
       
-			
+			<img src="../images/banner.png" style="max-width: 100%; padding: 5px; margin-top: 10px;">
 
 			<section id="one" class="main style1">
 				<div class="container">
 					<div class="row gtr-150">
 						<div class="col-6 col-12-medium">
 							<header class="major">
-								<h2>Frequently Asked Questions</h2><br>
+								<h2 style="text-align: center;">Frequently Asked Questions</h2><br>
 							</header>
                           
-                            <div id="accordion">
-                            <h3>Section 1</h3>
-                            <div>
-                              <p>
-                              Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-                              ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-                              amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-                              odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-                              </p>
-                            </div>
-                            <h3>Section 2</h3>
-                            <div>
-                              <p>
-                              Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
-                              purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
-                              velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
-                              suscipit faucibus urna.
-                              </p>
-                            </div>
-                            <h3>Section 3</h3>
-                            <div>
-                              <p>
-                              Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
-                              Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
-                              ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
-                              lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
-                              </p>
+                            <a class="faqlink" href="#">Safety Precautions Relating to Covid-19</a>
+                            <div class="content" ><p>To create a safer environment and to mitigate the spread of Covid-19 virus, there will be extra steps taking to ensure safety for patient and practitioner.</p>
+                           <ul>
+                              	<li>Covid-19 Health Screen completed by every patient prior to appointment and by practitioner daily</li>
+                                <li>Masks and/or shield will be worn by practitioner</li>
+                            	<li>All patients are required to wear a mask to their appointment</li>
+                                <li>Hand washing and sanitizing of equipement and common surfaces before and after treatment</li>
+                                <li>Contactless payment is available through the booking software prior to appointment (Standard payment of debit/credit is avaialble post-treatment)</li>
+                              </ul></div><br><br>
+                          
+                          
+                            <a class="faqlink" href="#">What to know PRIOR to your Appointment</a>
+                            <div class="content"><p>
+                              You must fill out your Health History Form and Consent sent via JaneAPP - if you did not receive this email, please let us know and we'd be happy to assist you.<br>
+
+                              <br>During treament, the practitioner wil be moving the patient; Patients should arrive wearing clothing that will not restrict your movement.<br><br>
+                              A mask is manditory and must be worn the full duration of your appointment.
+                          </p></div><br><br>
+                          
+                          
+                            <a class="faqlink" href="#">What to know for the DAY OF your Appointment</a>
+                            <div class="content"><p>
+                            
+                            You will receive a Covid-19 Health Screening survey sent from JaneApp.<br>
+                              
+                              This <i>must</i> be completd <b>PRIOR</b> toyour appointment. Please call ahead if you are experiencing any covid-19-like symptoms
+                                           such as fever, difficulty breathing or swalloing, sudden onset cough, or any other symptoms mentioned in the survery (cancellation fees will be waived in this instance).</p>
+
                               <ul>
-                                <li>List item one</li>
-                                <li>List item two</li>
-                                <li>List item three</li>
-                              </ul>
-                            </div>
-                            <h3>Section 4</h3>
-                            <div>
-                              <p>
-                              Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-                              et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-                              faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-                              mauris vel est.
-                              </p>
-                              <p>
-                              Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
-                              Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                              inceptos himenaeos.
-                              </p>
-                            </div>
-                          </div>
+                                <li>Arrive 5 minutes earlier and wait in your vehicle until 1 minute prior to your appointment.</li>
+                                <li>Sanitize your hands with provided sanitizer BEFORE and AFTER treatment</li>
+                              </ul></div><br><br>
+                          
+                          
+                            <a class="faqlink" href="#">What can Osteopathy help with?</a>
+                            <div class="content"><p>
+                            Manual Osteopathic treatment aims to restore proper communication with the arteries, veins, nerve and lymphatic systems by improving motion. Osteopathy can help with problems you may have relating to these systems, such as pains and aches, joint mobility, headaches, jaw/neck issues, digestive concerns to name a few. By improving the communication, we let the body self-heal and regulate and improve the natural functions of the body.  
+                            </p>
+                            <p>
+                            With osteopathy, motion is used to make an anatomical connection to the physiology (what you're experiencing). By restoring proper anatomical motion and alignment, we allow the blood, nerve and lymphatic systems surrounding the area to function more optimally.
+                          </p></div>
+
+                          
+                            
+                                
                       </div>
-					</div>
+                  </div>
 				</div>
 			</section>
 
-			<section id="four" class="main style2 special">
+			<section id="four" class="main style2 special index">
 				<div class="container">
 					<ul id="offices" class="actions special">
                       <li>
-                          <span class="office-head burlington">JD Osteopathy</span><br><br>
-<!--                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2899.173314930938!2d-79.82845978451604!3d43.394306779131064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b616084e736ab%3A0x974b6951741a5cce!2s3141%20Walkers%20Line%2C%20Burlington%2C%20ON%20L7M%200E1!5e0!3m2!1sen!2sca!4v1605416180034!5m2!1sen!2sca" width="400" height="300" frameborder="0" style="border:0; border-radius: 5px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe><br><br>-->
-                          <span class="office-head burlington sub"><i class="fa fa-map-marker" aria-hidden="true" style="margin-right: 10px;"></i>2455 Cawthra Rd Unit 54, Mississauga, ON L5A 3P1</span><br><br>
-                          <span class="office-head burlington sub"><i class="fa fa-phone" aria-hidden="true" style="margin-right: 10px;"></i>(647) 625-5059</span><br><br>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.6668297278206!2d-79.5970383488639!3d43.592655579021006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b47aff76aaaab%3A0xa8736f5c8a1e59d5!2s2455%20Cawthra%20Rd%20Unit%2054%2C%20Mississauga%2C%20ON%20L5A%203P1!5e0!3m2!1sen!2sca!4v1619382123306!5m2!1sen!2sca" width="300" height="250" frameborder="0" style="border:0; border-radius: 5px; float: left;" allowfullscreen="" aria-hidden="false" tabindex="0" allowfullscreen="" loading="lazy"></iframe><br>
+                        <span class="office-head burlington sub" style="display: inline-block; margin-top: 15px; width: auto;"><i class="fa fa-map-marker" aria-hidden="true" style="margin-right: 10px;"></i>2455 Cawthra Rd (Unit 54)<br>Mississauga, ON L5A 3P1</span><br><br>
+                        <span class="office-head burlington sub"><i class="fa fa-phone" aria-hidden="true" style="margin-right: 10px;"></i>(647) 625-5059</span><br><br>
                           <span class="office-head burlington sub" style="text-transform: none !important;"><i class="fa fa-envelope" aria-hidden="true" style="margin-right: 10px;"></i><a href="mailto:dmitrotherapy@gmail.com">dmitrotherapy@gmail.com</a></span><br><br>
                       </li>
                       <div id="divisor"></div>
