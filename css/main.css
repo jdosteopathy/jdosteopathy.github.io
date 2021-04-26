@@ -8,7 +8,7 @@
 */
 
 @media screen and (max-width: 736px) {
-  #offices { display: block; }
+  #offices { display: -webkit-box; }
   #divisor { height: 50px; }
 }
 
