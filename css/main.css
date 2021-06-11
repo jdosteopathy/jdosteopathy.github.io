@@ -134,7 +134,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #666;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: "Poppins", Helvetica, sans-serif;
 		font-size: 16pt;
 		font-weight: 300;
 		line-height: 1.65em;
@@ -2859,12 +2859,18 @@ input, select, textarea {
 
 
 		.main.style2.special.index {
-			background-color: #333;
+			background-color: #393333;
 			color: #E4DBD8;
 			background-attachment: fixed,							fixed;
-			background-image: url("images/01-splash.jpeg"), url("../../images/header.jpg");
+/*			background-image: url("images/01-splash.jpeg"), url("../../images/header.jpg");*/
 			background-size: auto,							cover;
 		}
+
+
+        #three {
+          background-color: #E4DBD8;
+          color: black;
+        }
 
         .main.style2 {
 			background-color: #333;
@@ -2882,7 +2888,6 @@ input, select, textarea {
           left: 0;
           bottom: 0;
           right: 0;
-          background: url("../images/old/background2.png");
           opacity: 0.5;
           content: ""; 
           background-size: cover;
@@ -2979,10 +2984,10 @@ input, select, textarea {
 
 	#header {
 		padding: 9em 0 9em 0 ;
-		background-color: #4686a0;
+		background-color: #E49A60;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed,							fixed,							fixed;
-		background-image: url("../images/03-contact.jpg"), url("images/overlay3.svg"), linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
+		background-image: url("../images/03-contact.jpg");
 		background-position:center;
 		background-size: cover;;
 		overflow: hidden;
@@ -3142,7 +3147,7 @@ input, select, textarea {
 			-webkit-transition: opacity 1s ease;
 			-ms-transition: opacity 1s ease;
 			transition: opacity 1s ease;
-			background-image: linear-gradient(45deg, #4fa49a, #4361c2);
+/*			background-image: linear-gradient(45deg, #4fa49a, #4361c2);*/
 			content: '';
 			height: 100%;
 			left: 0;
