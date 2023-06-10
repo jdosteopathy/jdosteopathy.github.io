@@ -87,6 +87,156 @@
 
 		<section id="three" class="main style2 special index">
 			<div class="container">
+				<style>
+* {box-sizing: border-box}
+body {font-family: Poppins, sans-serif; margin:0}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #E4DBD8;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 40px;
+  text-align: left;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 90%;
+  width: centre;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 35px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* Position the "next button" to the right */
+.prev {
+  position: absolute;
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #black;
+
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: bold;}
+
+/* Add a blue color to the author */
+.author {color: #D8653D; font-weight: bold; text-align: center;}
+</style>
+</head>
+<body background="image/lightpatternhalf.JPG">
+<h2> Check out what others have to say! </h2>
+<div class="slideshow-container">
+<div class="mySlides">
+  <img class="carousel-cell-image" src="images/janereview.jpg" text-align="centre"; height="50%"; width="100%">
+  <p class="author">- Jane App Reviews.</p>
+</div>
+<div class="mySlides">
+  <q>JD Osteopathy is the best! Dmitro has me back in tip top shape after only a few appointments. He also takes the time to explain what he is doing and why it is effective. Would give him more than 5 stars if possible.</q>
+  <p class="author">- Nick D.</p></div>
+<div class="mySlides">
+  <q>Saw Dmitro for a couple of sessions and my knee already feels alot better. No sharp of stabbing pains when squatting heavy or doing full olympic lifts...highly recommended!.</q>
+  <p class="author">- Fahim R.</p>
+</div>
+<div class="mySlides">
+  <q>I've been going to Dmitro for a while now and I've noticed a massive difference in my body. Whenever I happen to have an injury or a tight spot, he resolves it...highly recommend!</q>
+  <p class="author">- Sasha A.</p>
+</div>
+<div class="mySlides">
+  <q>Had a great eperience! He's very skilled and thorough with his assessment. Best osteopath in Mississauga; I would highly recommend seeing hm if anyone has neck pain that cant get relief from other places. Thanks for all your help Dmitro!</q>
+  <p class="author">- Briana P.</p>
+</div>
+<div class="mySlides">
+  <img class="carousel-cell-image" src="images/janereview.jpg" text-align="centre"; width="100%">
+  <p class="author">- Jane App Reviews.</p>
+</div>
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>  
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
 				<!--					hello i am dmitro-->
 			</div>
 		</section>
